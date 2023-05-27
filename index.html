@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Markdown Rendering Example</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <div id="markdown-content">
+    # Here I am placing some markdown 
+
+    here are some details and such.
+
+    ## This is a sub-header
+    
+    with some additional details.
+    - and a bulleted list
+    - 
+  </div>
+
+  <script>
+    var markdownContent = document.getElementById('markdown-content').innerHTML;
+    document.getElementById('markdown-content').innerHTML = marked(markdownContent);
+  </script>
+</body>
+</html>
